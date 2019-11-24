@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+<h2>Welcome To Majiaxueyuan For Study</h2>
+<div th:text="${name}"></div>
+<hr/>
+<h4 th:text="${obj}" th:each="obj:${list}"></h4>
+<hr/>
+<div>
+    <span th:each="obj:${list}">[[${obj}]]</span>
+</div>
+</body>
+</html>
